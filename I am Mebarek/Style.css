@@ -63,7 +63,6 @@ height: 500px;
 width: 400px;
 background: var(--c5);
 }
-
 .am {
     margin: 10px;
     position: relative;
@@ -194,7 +193,6 @@ background-size: 75% 75%;
             color: var(--c2);
         }
 }
-
 .ski {
         margin: 10px;
         position: relative;
