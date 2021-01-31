@@ -1,0 +1,232 @@
+/*Color c1-c5*/
+:root {--c1 :#e96d5e;--c2:#ff9760;--c3:#ffe69d;
+    --c4:#6a7e6a;--c5:#393f5f;
+}
+body {
+    background: var(--c4);
+    margin: 0;
+    padding: 0;
+    font-family:  verdana , 'Helvetica Neue', sans-serif; 
+}
+.bdy {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    size: 100%;
+}
+.cm {    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2.5vh 2vw;
+    text-decoration: none;
+
+    border: 2px solid var(--c1);
+    border-radius: 20%;
+    position: absolute;
+    right: 0;
+    height: 5vh;
+    width: 150px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    background:none;
+    color : var(--c1);
+    transition: 0.25s;
+}
+.nv {
+    height: 10vh;
+    width: 100%;
+    background: var(--c5);
+    position: relative;
+    z-index: 1;
+}
+.cm:hover {
+   
+    background: var(--c4);
+    color: var(--c1);
+}
+.wlc{
+    font-size: 60px ;
+    color: var(--c1);
+    text-shadow: 2px 2px 0px var(--c4);
+}
+.pre {
+margin: 10px;
+display: flex;
+justify-content: center;
+align-items: center;    
+flex-direction: column;
+height: 500px;
+width: 400px;
+background: var(--c5);
+}
+
+.am {
+    margin: 10px;
+    position: relative;
+    background: var(--c5);
+    height: 500px;
+    width: 400px; 
+}
+.am h1 {
+    color: var(--c1) ;
+    position: absolute;
+    left: 20px;
+}
+.pic{
+display: inline-block;
+background: linear-gradient(130deg , var(--c1) , var(--c4));
+margin: auto;
+position: absolute;
+left: 250px;
+top: 30px;
+animation: shi 4s linear infinite;
+background-size: 75% 75%;
+}
+.pic img {
+    display: block;
+    padding: 8px;
+    height: 100px;
+    width: 100px;  
+}
+/*Here Goes the fucking animation*/
+@keyframes shi {
+    25%{
+        background-position: left bottom;
+
+    }
+    50%{
+        background-position: right bottom;
+        background-size: 60% 60%;
+    }
+    75%{
+        background-position: right top;
+
+    }
+    100%{
+        background-position: left top;
+}
+}
+.txte { 
+    position: absolute;
+    left: -70px;
+    top: 50px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.sm a {
+    text-decoration: none;
+    color: var(--c3);
+    font-size: 40px;
+    top: 400px;
+}
+.fac {
+    position: absolute;
+    left: 15%;
+    animation: pro1 4s linear infinite;
+}
+.ins {
+    position: absolute;
+    left: 45%;
+    animation: pro2 4s linear infinite;
+}
+.wht {
+    position: absolute;
+    left: 75%;
+    animation: pro3 4s linear infinite;
+}
+.fac:hover , .ins:hover , .wht:hover{
+    animation: none;
+    transition: 0.25s;
+    color:var(--c1);
+}
+@keyframes pro1 {
+0%{
+    color: var(--c4);
+}
+25%{
+    color: var(--c1);
+}
+50%{
+    color: var(--c2);
+}
+75%{
+    color: var(--c3);
+}
+100%{
+    color: var(--c4);
+}
+}
+@keyframes pro2 {
+    0%{
+        color: var(--c1);
+    }
+    25%{
+        color: var(--c4);
+    }
+    50%{
+        color: var(--c3);
+    }
+    75%{
+        color: var(--c2);
+    }
+    100%{
+        color: var(--c1);
+    }
+}
+@keyframes pro3 {
+        0%{
+            color: var(--c2);
+        }
+        25%{
+            color: var(--c3);
+        }
+        50%{
+            color: var(--c4);
+        }
+        75%{
+            color: var(--c1);
+        }
+        100%{
+            color: var(--c2);
+        }
+}
+
+.ski {
+        margin: 10px;
+        position: relative;
+        background: var(--c5);
+        overflow: hidden;
+        height: 500px;
+        width: 400px; 
+}
+.ski h1 {   
+    color: var(--c1) ;
+    position: absolute;
+    left: 20px;
+}
+.ski .cs{
+    font-weight: bold;
+    font-size: 30px;
+    position: absolute;
+    top: 30px;
+    left: -60px;
+}
+.tri1:hover {
+    color: var(--c1);
+}
+.tri2:hover {
+    color: var(--c2);
+}
+.tri3:hover {
+    color: var(--c3);
+}
+.tri4:hover {
+    color: var(--c4);
+}
+.tri5:hover {
+    color: var(--c5);
+}
