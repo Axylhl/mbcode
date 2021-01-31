@@ -1,0 +1,79 @@
+/*Color c1-c5*/
+:root {--c1 :#e96d5e;--c2:#ff9760;--c3:#ffe69d;
+    --c4:#6a7e6a;--c5:#393f5f;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: var(--c4);
+    font-family: verdana , 'Helvetica Neue', sans-serif; 
+}
+h1 {
+    color:var(--c1);
+    text-transform: uppercase;
+    text-shadow: 2px 2px 0px var(--c4);
+}
+.card {
+position: absolute;
+transform-origin: center;
+left: 50%;
+transform: translateX(-50%);
+height: 100%;
+width: 400px;
+height: 100vh;
+padding: 0px;
+background:var(--c5);   
+text-align: center;
+} 
+.name , .lname , .mail{
+    width: 150px;
+}
+.name , .lname , .mail , .message{
+    display: block;
+    background:none;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid var(--c1) ;
+    padding: 14px 10px;
+    border-radius: 15%;
+    font-weight: bold;
+    color:var(--c1);
+    outline: none;
+    transition: 0.25s;
+}
+.btn {
+text-transform: capitalize;
+color: var(--c3);
+font-weight: bolder;
+background:none;
+margin: 20px auto;
+text-align: center;
+border: 2px solid var(--c1);
+padding: 14px 10px;
+border-radius: 15%;
+font-weight: bold;
+outline: none;
+transition: 0.25s;
+}
+.message{
+    text-align: left;
+    color: white;
+}
+.name:focus, .lname:focus,.mail:focus {
+    width:200px;
+    border-color: var(--c3);
+    color: var(--c3);
+}
+.btn:hover {
+    background-color: var(--c2);
+}
+footer {
+    position: absolute;
+    top: 97.5%;
+    text-align: center;
+    width: 100vw;
+}
+.hidden {
+    visibility: hidden;
+    height: 0;
+}
